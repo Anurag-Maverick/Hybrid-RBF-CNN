@@ -1,4 +1,4 @@
-# Hybrid-RBF-CNN
+# Hybrid-RBF-CNN Architecture
 
 Electrocardiogram (ECG) signal monitoring is the most popular practice in medical science to analyse the heart’s function and hence, diagnose abnormal heartbeats. Hence, there has been an increasing interest towards fast and accurate classification of heartbeats.This problem is a multiclass classification of heart-beats into 4 abnormal (diseases) and 1 normal class (total 5 classes). 
 

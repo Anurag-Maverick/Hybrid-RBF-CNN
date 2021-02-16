@@ -14,8 +14,8 @@ Preprocessing:
   Python’s Skimage library has the BayesShrink algorithm, which is an adaptive approach to wavelet soft thresholding where a unique threshold is estimated for each wavelet sub-     band. Here, a symplet 8 (i.e. Daubechies’ least-asymmetric wavelet having 8 vanishing moments) has been used for denoising purpose.
   
   2. Wavelet Packet Decomposition Power Spectrum
-  Wavelet Packet Decomposition (WPD) is a wavelet transform where the discrete-time (sampled) signal is passed through more filters than the discrete wavelet transform (DWT).       Further read is available at: https://www.mathworks.com/help/wavelet/ug/wavelet-packets-decomposing-the-details.html
-  in this work, level 3 sub-bands of db3 wavelets (i.e. Daubechies’ extremal phase wavelets having 3 vanishing moments) have been extracted and stacked one over another to give a   8x29x1 dimensional image for each beat. Thus a 2D time-frequency representational feature space has been successfully extracted here.
+  Wavelet Packet Decomposition (WPD) is a wavelet transform where the discrete-time (sampled) signal is passed through more filters than the discrete wavelet transform (DWT).       Further read is available at: https://www.mathworks.com/help/wavelet/ug/wavelet-packets-decomposing-the-details.html.
+  In this work, level 3 sub-bands of db3 wavelets (i.e. Daubechies’ extremal phase wavelets having 3 vanishing moments) have been extracted and stacked one over another to give a   8x29x1 dimensional image for each beat. Thus a 2D time-frequency representational feature space has been successfully extracted here.
   
  Classifiers:
   The classifiers studied here are : CNN (with Residual units), RBFNN and Hybrid RBFNN-CNN networks for comparison. While in CNN, the entire 8x29x1 dimensional image is taken as     input, in the latter 2, we only take the approximate band (29x1 dimensional) as input feature.
